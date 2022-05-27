@@ -1,0 +1,14 @@
+{
+  "name": "JOURNOBOT v0.0.1 🤖",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Write better articles",
+  "permissions": ["tabs", "*://*.theguardian.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.theguardian.com/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "web_accessible_resources": ["secrets.json"]
+}
